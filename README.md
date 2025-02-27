@@ -40,4 +40,5 @@ TaskSync es una aplicación desarrollada con **React Native** y **Expo** que fac
     npx expo start
    ```
 ## Diseño 
+![Image](https://github.com/user-attachments/assets/0cb91d64-d549-412e-955d-21aa6bfe6274) ![Image](https://github.com/user-attachments/assets/e957fdf9-3ce0-478b-832e-210d846bf592) ![Image](https://github.com/user-attachments/assets/fe126d25-cd95-4754-a9ac-e0d7d9d0e73d)
 
