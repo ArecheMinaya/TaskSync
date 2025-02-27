@@ -4,48 +4,28 @@
 
 - **React Native con Expo** ✅
 - **Typescript** ✅
-- **Redux, Context API o Zustand** ✅
+- **Redux** ✅
 - **React Navigation** ✅
-- **Axios (consumo de fake API o mocks)** ✅
 
 ## Funcionalidades mínimas:
 
-- **Autenticación con OAuth o JWT** ✅
+- **Autenticación con OAuth** ✅
 - **Pantalla principal con listado de cuentas** ✅
-- **Pantalla detalle de cuenta** ✅
-  - Visualizar información de la cuenta ✅
-  - Listar y filtrar transacciones ✅
-- **Transferir dinero entre cuentas** ✅
+- **Mostrar una lista de tareas.** ✅
+- **Agregar, editar y eliminar tareas.** ✅
 - **Persistencia de datos en el dispositivo** ✅
 
-## Seguridad:
 
-- **Cifrar datos sensibles en almacenamiento** ✅
+# TaskSync
 
-## Aseguramiento de la calidad:
-
-- **Pruebas unitarias con Jest y React Testing Library** ❌
-- **Manejo de la inactividad de la aplicación** ❌
-- **Uso de variables de entorno** ❌
-- **Linting y formateo** ✅
-
-## +Plus Implementados:
-
-- **Uso de autenticación biométrica** ✅
-- **Estrategia de componentización (Ej. Atomic Design)** ✅
-- **Animaciones o efectos de UI para mejorar la experiencia del usuario** ✅
-
-
-# BankingApp
-
-Este es un proyecto creado con **React Native** y **Expo**. Es una aplicación de gestión de cuentas bancarias que permite ver el saldo, listar transacciones, transferir dinero y mucho más.
+TaskSync es una aplicación desarrollada con **React Native** y **Expo** que facilita la gestión eficiente de tus tareas diarias. Con TaskSync, puedes organizar, priorizar y realizar un seguimiento detallado de tus actividades, asegurando un flujo de trabajo productivo y bien estructurado.
 
 ## Ejecutar el App
 
 1. Clona el proyecto
 
    ```bash
-   git clone https://github.com/ArecheMinaya/BankingApp.git
+   git https://github.com/ArecheMinaya/TaskSync.git
    ```
 
 2. Instala las dependencias
