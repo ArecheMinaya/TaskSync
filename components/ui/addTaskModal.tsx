@@ -54,9 +54,11 @@ const AddTask = ({ handleSelectedCategory,  selectedCategory, handleCloseAddTask
                 validationSchema={validationSchema}
                 validateOnChange={false} // Desactiva la validación al cambiar
                 validateOnBlur={false}   // Desactiva la validación al desenfocar
-                onSubmit={(values, { setSubmitting }) => {
+                onSubmit={(values, { setSubmitting, resetForm }) => {
                     values.category = selectedCategory || "Otros";
                     handleSubmit(values);
+                    setSubmitting(false);
+                    resetForm();
                 }}
              initialValues={task}>
                  {({ handleChange, handleBlur, handleSubmit, values, errors, touched, isSubmitting }) => (
