@@ -30,8 +30,8 @@ const dispatch = useAppDispatch();
            <Text className='text-xl font-bold text-blue-600'>TaskStnc</Text>
          </View>
          <View>
-            <Text className='text-2xl font-semibold'>Bienvenido</Text>
-            <Text className='text-gray-500 mt-4 w-64 text-md'>Inicie sesión en su cuenta y administre sus tareas</Text>
+            <Text className='text-3xl font-semibold'>Bienvenido</Text>
+            <Text className='text-gray-500 mt-4 w-64 text-lg'>Inicie sesión en su cuenta y administre sus tareas</Text>
          </View>
         <View>
         <View className='flex-row gap-x-2 border-b border-gray-200 py-2'>
