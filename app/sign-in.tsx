@@ -23,7 +23,7 @@ const dispatch = useAppDispatch();
          <Link href={'/'}>
          <View className='flex-row gap-x-2 items-center'>
               <ChevronLeft size={26} color={'#7F7C96'} strokeWidth={1.5} />
-               <Text className='text-xl text-gray-500'>Back</Text>            
+               <Text className='text-xl text-gray-500'>Ir atrás</Text>            
           </View>
          </Link>
       
