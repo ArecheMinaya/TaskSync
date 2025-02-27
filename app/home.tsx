@@ -20,6 +20,7 @@ import AddTask from '@/components/ui/addTaskModal';
 import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { SafeAreaView } from "react-native-safe-area-context";
+import { signOutUser } from '@/src/redux/features/slice/authSlice';
 
 
 export default function HomeScreen() {
@@ -92,10 +93,14 @@ const handleCloseAddTask = () => {
     <SafeAreaView  edges={["top"]}   className='flex-1' style={{ backgroundColor: 'white' }}   >
       <GestureHandlerRootView  className='flex-1'>
       <View className='flex-row justify-between items-center mt-5 px-[20]'>
-          <View className='flex-row gap-x-2 items-center'>
+          <TouchableOpacity 
+          onPress={() => {
+            dispatch(signOutUser());
+          }}
+          className='flex-row gap-x-2 items-center'>
               <ChevronLeft size={26} color={'#7F7C96'} strokeWidth={1.5} />
               <Text className='text-xl text-gray-500'>Salir</Text>
-          </View>
+          </TouchableOpacity>
            <Text className='text-xl font-bold text-blue-600'>TaskStnc</Text>
          </View>
        <View className='px-[20] mt-4'>

@@ -52,7 +52,7 @@ const EditTask = ({
     <BottomSheetView style={{flex: 1, paddingHorizontal: 20, alignContent: 'center'}}>
     
             <View style={{flex: 1}}>
-                <Text className='mb-4'>Status</Text>
+            <Text className="font-semibold text-xl mb-4">Status</Text>
                 <View className=' flex flex-row gap-4 flex-wrap w-full mb-4'>
                 {
                 status.map((status, index) => (
@@ -65,21 +65,21 @@ const EditTask = ({
               }
               </View>
               
-              <Text>Task Name</Text>
+              <Text className="font-semibold text-xl">Título</Text>
               <TextInput 
               defaultValue={selectedTask.title}
               onChangeText={(text) => setTask({...task, title: text})}
               placeholder='Task Name' className='w-full border p-4 rounded-2xl border-gray-300 mt-4 mb-4' />
               
-              <Text className='mb-4'>Categories</Text>
+              <Text className="font-semibold text-xl mb-4">Categoria</Text>
               <SelectedCategory category={category|| task.category} handleCategoryPress={()=>{
                 handleSelectedCategory()
               }} />
              
-              <Text>Date</Text>
+             <Text className="font-semibold text-xl">Fecha</Text>
               <DatePickerModal value={selectedTask.date} handleDateChange={(date) => setTask({...task, date: date})} />
               
-              <Text>Description</Text>
+              <Text className="font-semibold text-xl">Descripción</Text>
               <TextInput 
               defaultValue={selectedTask.description}
               placeholder='Task Description' className='w-full border p-4 rounded-2xl border-gray-300 mt-4' />
@@ -94,8 +94,8 @@ const EditTask = ({
                           onPress={() => {
                             handelDeleteTask();
                           }}
-                          className=' bg-red-600 py-4 mt-4 rounded-2xl'>
-                              <Text className='text-white text-center text-lg font-semibold'>Eliminar</Text>
+                          className=' border border-red-600  py-4 mt-4 rounded-2xl'>
+                              <Text className='text-red-600 text-center text-lg font-semibold'>Eliminar</Text>
                           </TouchableOpacity>
             </View>
 </BottomSheetView>)
